@@ -1,17 +1,98 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "./abstracts/mixins", "./abstracts/variables";
- *   |                               ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss/main.scss 3:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"./abstracts/mixins\", \"./abstracts/variables\";\a   \2502                                ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/main.scss 3:31  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #fff;
+}
+
+.img-container {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/Home.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.img-container {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2rem 4rem;
+}
+.navbar .links {
+  display: flex;
+  gap: 3rem;
+}
+.navbar a {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.navbar a:hover {
+  color: #b2b13d;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .header-box {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+main .header-box h2 {
+  font-size: 2.4rem;
+}
+main .header-box h1 {
+  font-size: 8rem;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 2rem 4rem;
+}
+footer .icon-box {
+  width: 10%;
+  font-size: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .icon-box a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .icon-box .fa-brands {
+  transition: all 0.3s;
+}
+footer .icon-box .fa-brands:hover {
+  transform: scale(1.1) translateY(-3px);
+  color: #b2b13d;
+}
+footer .copyright {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
