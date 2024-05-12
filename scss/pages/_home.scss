@@ -1,6 +1,5 @@
 .img-container {
-  @include backgroundImage(100vh, url(../../img/Home.webp));
-  position: relative;
+  @include backgroundImage(100vh, url(../../img/Home.webp), center);
 }
 
 .home {
