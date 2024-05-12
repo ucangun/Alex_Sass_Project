@@ -1,0 +1,58 @@
+footer.horizontal {
+  height: 10vh;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+
+  .icon-box {
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+
+    .icon {
+      @include iconNormal;
+      &:hover {
+        @include iconHover;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+footer.vertical {
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem;
+
+  .about_icon-box {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    .icon {
+      @include iconNormal;
+      &:hover {
+        @include iconHover;
+      }
+    }
+  }
+  .about_copyright {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    transform: rotate(90deg) translate(-5rem, -5rem);
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+}
