@@ -27,38 +27,26 @@
 /*          RESPONSIVE DESIGN         */
 /* ---------------------------------- */
 
-@mixin media-xsm {
-  @media screen and (min-width: 0px) {
-    @content;
-  }
-}
-
-@mixin media-xs {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-
-@mixin media-sm {
-  @media screen and (min-width: 576px) {
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin media-md {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin media-lg {
-  @media screen and (min-width: 1024px) {
+@mixin media-sm {
+  @media screen and (max-width: 576px) {
     @content;
   }
 }
 
-@mixin media-xl {
-  @media screen and (min-width: 1600px) {
+@mixin media-xs {
+  @media screen and (max-width: 384px) {
     @content;
   }
 }
