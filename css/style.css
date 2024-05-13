@@ -148,7 +148,7 @@ footer.middle .copyright {
   padding: 5rem;
 }
 .about__cards .card {
-  padding: 2rem;
+  padding: 2rem 4rem;
   color: darkblue;
   background-color: #b49a29;
   margin: 2rem;
@@ -267,6 +267,17 @@ footer.middle .copyright {
   background-position: top;
 }
 
+@media screen and (max-width: 768px) {
+  footer.vertical .about_icon-box {
+    font-size: 2.4rem;
+  }
+  .about__text {
+    font-size: 1.8rem;
+  }
+  .about__cards .card__year {
+    font-size: 2.2rem;
+  }
+}
 @media screen and (max-width: 576px) {
   .navbar {
     justify-content: center;
@@ -279,6 +290,16 @@ footer.middle .copyright {
   }
   .home .header-box h1 {
     font-size: 6rem;
+  }
+  .about__text {
+    text-align: justify;
+    font-size: 1.6rem;
+  }
+  .about__cards .card {
+    padding: 2rem;
+  }
+  .about__cards .card__year {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 470px) {
@@ -308,6 +329,21 @@ footer.middle .copyright {
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
   }
+  .about__text {
+    padding: 3rem 6rem;
+  }
+  .about__cards .card {
+    padding: 2rem 1rem;
+  }
+  .about__cards .card__year {
+    font-size: 1.8rem;
+  }
+  .about__cards .card__team {
+    font-size: 2.2rem;
+  }
+  .about__cards .card__text {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 430px) {
   .navbar {
@@ -315,6 +351,12 @@ footer.middle .copyright {
   }
   .navbar__link {
     font-size: 1.4rem;
+  }
+  .about__cards .card__year {
+    font-size: 1.8rem;
+  }
+  .about__cards .card__team {
+    font-size: 2.2rem;
   }
 }
 

@@ -2,6 +2,25 @@
 }
 
 @include media-md {
+  footer.vertical {
+    .about_icon-box {
+      font-size: 2.4rem;
+    }
+  }
+
+  .about {
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__cards {
+      .card {
+        &__year {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
 }
 
 @include media-sm {
@@ -20,6 +39,22 @@
       }
       h1 {
         font-size: 6rem;
+      }
+    }
+  }
+
+  .about {
+    &__text {
+      text-align: justify;
+      font-size: 1.6rem;
+    }
+
+    &__cards {
+      .card {
+        padding: 2rem;
+        &__year {
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -61,6 +96,30 @@
       letter-spacing: 0.3rem;
     }
   }
+
+  .about {
+    &__text {
+      padding: 3rem 6rem;
+    }
+
+    &__cards {
+      .card {
+        padding: 2rem 1rem;
+
+        &__year {
+          font-size: 1.8rem;
+        }
+
+        &__team {
+          font-size: 2.2rem;
+        }
+
+        &__text {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @include media-xxs {
@@ -69,6 +128,20 @@
 
     &__link {
       font-size: 1.4rem;
+    }
+  }
+
+  .about {
+    &__cards {
+      .card {
+        &__year {
+          font-size: 1.8rem;
+        }
+
+        &__team {
+          font-size: 2.2rem;
+        }
+      }
     }
   }
 }
