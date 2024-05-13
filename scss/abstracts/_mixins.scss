@@ -27,8 +27,14 @@
 /*          RESPONSIVE DESIGN         */
 /* ---------------------------------- */
 
-@mixin media-lg {
+@mixin media-xlg {
   @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 840px) {
     @content;
   }
 }

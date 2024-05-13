@@ -240,6 +240,9 @@ footer.middle .copyright {
   object-fit: cover;
 }
 
+.career {
+  padding: 0 5rem;
+}
 .career .gallery {
   width: 100%;
   margin-top: 5rem;
@@ -249,8 +252,8 @@ footer.middle .copyright {
   gap: 2rem;
 }
 .career .gallery .img__box {
-  width: 40rem;
-  height: 40rem;
+  width: 30rem;
+  height: 30rem;
   border: 2px solid #fff;
   border-radius: 1rem;
   overflow: hidden;
