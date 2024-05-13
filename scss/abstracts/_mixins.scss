@@ -46,7 +46,13 @@
 }
 
 @mixin media-xs {
-  @media screen and (max-width: 384px) {
+  @media screen and (max-width: 470px) {
+    @content;
+  }
+}
+
+@mixin media-xxs {
+  @media screen and (max-width: 430px) {
     @content;
   }
 }

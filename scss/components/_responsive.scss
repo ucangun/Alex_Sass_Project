@@ -1,0 +1,74 @@
+@include media-lg {
+}
+
+@include media-md {
+}
+
+@include media-sm {
+  .navbar {
+    justify-content: center;
+
+    &__link {
+      font-size: 2rem;
+    }
+  }
+
+  .home {
+    .header-box {
+      h2 {
+        font-size: 2.2rem;
+      }
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@include media-xs {
+  .navbar {
+    justify-content: center;
+
+    &__link {
+      font-size: 1.8rem;
+    }
+  }
+
+  .home {
+    .header-box {
+      h2 {
+        font-size: 2rem;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  footer.horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .icon-box {
+      font-size: 2.4rem;
+    }
+
+    .copyright {
+      font-size: 1.4rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+}
+
+@include media-xxs {
+  .navbar {
+    justify-content: center;
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}
