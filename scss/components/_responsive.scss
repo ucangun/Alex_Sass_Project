@@ -2,8 +2,28 @@
 }
 
 @include media-lg {
-}
+  .contact {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 
+    h2 {
+      font-size: 3rem;
+    }
+
+    &__box {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+    }
+  }
+}
 @include media-md {
   footer.vertical {
     .about_icon-box {

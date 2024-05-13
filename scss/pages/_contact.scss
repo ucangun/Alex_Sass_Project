@@ -1,12 +1,12 @@
 .contact_img-container {
   @include backgroundImage(100vh, url(../../img/contact.jpeg), center);
   .navbar {
-    height: 40vh;
+    height: 10vh;
   }
 }
 
 .contact {
-  height: 40vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,7 @@
   gap: 5rem;
 
   h2 {
-    font-size: 4rem;
-    color: #011e3e;
+    font-size: 3rem;
   }
 
   &__box {

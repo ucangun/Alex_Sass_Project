@@ -183,11 +183,11 @@ footer.middle .copyright {
   object-fit: cover;
 }
 .contact_img-container .navbar {
-  height: 40vh;
+  height: 10vh;
 }
 
 .contact {
-  height: 40vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,8 +195,7 @@ footer.middle .copyright {
   gap: 5rem;
 }
 .contact h2 {
-  font-size: 4rem;
-  color: #011e3e;
+  font-size: 3rem;
 }
 .contact__box {
   font-size: 2rem;
@@ -285,6 +284,27 @@ footer.middle .copyright {
   background-position: top;
 }
 
+@media screen and (max-width: 840px) {
+  .contact {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .contact__box {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   footer.vertical .about_icon-box {
     font-size: 2.4rem;
