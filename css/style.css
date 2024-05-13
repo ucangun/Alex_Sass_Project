@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: darkblue;
+  background-color: #011e3e;
   color: #fff;
 }
 
@@ -35,7 +35,7 @@ footer.horizontal .icon-box .icon {
 }
 footer.horizontal .icon-box .icon:hover {
   transform: scale(1.1) translateY(-3px);
-  color: #b49a29;
+  color: #ddb525;
 }
 footer.horizontal .copyright {
   font-size: 1.6rem;
@@ -65,7 +65,7 @@ footer.vertical .about_icon-box .icon {
 }
 footer.vertical .about_icon-box .icon:hover {
   transform: scale(1.1) translateY(-3px);
-  color: #b49a29;
+  color: #ddb525;
 }
 footer.vertical .about_copyright {
   position: fixed;
@@ -96,7 +96,7 @@ footer.middle .icon-box .icon {
 }
 footer.middle .icon-box .icon:hover {
   transform: scale(1.1) translateY(-3px);
-  color: #b49a29;
+  color: #ddb525;
 }
 footer.middle .copyright {
   font-size: 1.6rem;
@@ -121,7 +121,11 @@ footer.middle .copyright {
   transition: all 0.3s;
 }
 .navbar__link:hover {
-  color: #b49a29;
+  color: #ddb525;
+}
+
+.active {
+  color: #ddb525;
 }
 
 .about_img-container {
@@ -137,7 +141,7 @@ footer.middle .copyright {
   text-align: center;
   font-size: 2rem;
   line-height: 1.4;
-  color: #b49a29;
+  color: #fff;
   padding: 3rem 5rem;
 }
 .about__cards {
@@ -149,27 +153,30 @@ footer.middle .copyright {
 }
 .about__cards .card {
   padding: 2rem 4rem;
-  color: darkblue;
-  background-color: #b49a29;
+  color: #011e3e;
+  background-color: #ddb525;
   margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border-radius: 10px;
 }
 .about__cards .card__year {
   font-size: 2.4rem;
 }
 .about__cards .card__team {
   font-size: 2.4rem;
+  letter-spacing: 0.2rem;
 }
 .about__cards .card__text {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: 1.3;
 }
 
 .contact_img-container {
   height: 100vh;
-  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../../img/Home.webp);
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../../img/contact.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,6 +196,7 @@ footer.middle .copyright {
 }
 .contact h2 {
   font-size: 4rem;
+  color: #011e3e;
 }
 .contact__box {
   font-size: 2rem;
@@ -196,13 +204,20 @@ footer.middle .copyright {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 10rem;
 }
 .contact__box-mail, .contact__box-address, .contact__box-phone {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+.contact__box-mail i, .contact__box-address i, .contact__box-phone i {
+  font-size: 2rem;
+  color: #ddb525;
+}
+.contact__box-mail .contact__text, .contact__box-address .contact__text, .contact__box-phone .contact__text {
+  color: #ddb525;
 }
 .img-container {
   height: 100vh;
@@ -254,7 +269,7 @@ footer.middle .copyright {
 .career .gallery .img__box {
   width: 30rem;
   height: 30rem;
-  border: 2px solid #fff;
+  border: 2px solid #ddb525;
   border-radius: 1rem;
   overflow: hidden;
 }
