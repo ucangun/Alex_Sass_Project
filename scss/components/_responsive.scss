@@ -61,88 +61,94 @@
       }
     }
   }
-}
 
-@include media-xs {
-  .navbar {
-    justify-content: center;
-
-    &__link {
+  .contact {
+    &__box {
       font-size: 1.8rem;
     }
   }
 
-  .home {
-    .header-box {
-      h2 {
-        font-size: 2rem;
+  @include media-xs {
+    .navbar {
+      justify-content: center;
+
+      &__link {
+        font-size: 1.8rem;
       }
-      h1 {
-        font-size: 5rem;
-      }
-    }
-  }
-
-  footer.horizontal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    .icon-box {
-      font-size: 2.4rem;
     }
 
-    .copyright {
-      font-size: 1.4rem;
-      letter-spacing: 0.3rem;
-    }
-  }
-
-  .about {
-    &__text {
-      padding: 3rem 6rem;
-    }
-
-    &__cards {
-      .card {
-        padding: 2rem 1rem;
-
-        &__year {
-          font-size: 1.8rem;
+    .home {
+      .header-box {
+        h2 {
+          font-size: 2rem;
         }
-
-        &__team {
-          font-size: 2.2rem;
-        }
-
-        &__text {
-          font-size: 1.6rem;
+        h1 {
+          font-size: 5rem;
         }
       }
     }
-  }
-}
 
-@include media-xxs {
-  .navbar {
-    justify-content: center;
+    footer.horizontal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
 
-    &__link {
-      font-size: 1.4rem;
+      .icon-box {
+        font-size: 2.4rem;
+      }
+
+      .copyright {
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+
+    .about {
+      &__text {
+        padding: 3rem 6rem;
+      }
+
+      &__cards {
+        .card {
+          padding: 2rem 1rem;
+
+          &__year {
+            font-size: 1.8rem;
+          }
+
+          &__team {
+            font-size: 2.2rem;
+          }
+
+          &__text {
+            font-size: 1.6rem;
+          }
+        }
+      }
     }
   }
 
-  .about {
-    &__cards {
-      .card {
-        &__year {
-          font-size: 1.8rem;
-        }
+  @include media-xxs {
+    .navbar {
+      justify-content: center;
 
-        &__team {
-          font-size: 2.2rem;
+      &__link {
+        font-size: 1.4rem;
+      }
+    }
+
+    .about {
+      &__cards {
+        .card {
+          &__year {
+            font-size: 1.8rem;
+          }
+
+          &__team {
+            font-size: 2.2rem;
+          }
         }
       }
     }
