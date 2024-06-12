@@ -25,6 +25,7 @@ The purpose of this project is to enhance and demonstrate my skills in Sass (Syn
 ```
 
 ## Outcome
+![Alex de Souza](https://github.com/ucangun/Alex_Sass_Project/assets/149247682/913b95ef-da6c-4f65-a6c5-451c11e2aff3)
 
 
 ## Technologies Used
